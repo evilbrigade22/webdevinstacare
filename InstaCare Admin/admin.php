@@ -109,7 +109,7 @@ include('php/fetch_nurse_info.php');
             ?>
             <tr>
               <td>2021-170234</td>
-              <td>Nathaniel Victor</td>
+              <td>Nathaniel E. Victor</td>
               <td>4123434</td>
               <td>09771237654</td>
               <td>nath</td>

@@ -1,0 +1,215 @@
+html,
+body {
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  color: #0c4160;
+}
+
+* {
+  text-decoration: none !important;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 25px;
+  background-color: #0c4160;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logo img {
+  width: 130px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: top; /* Align to the top of the text */
+}
+
+.nav .links a {
+  margin-right: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff7e6;
+}
+
+.nav .links .mainlink {
+  color: #e0501b;
+}
+
+.nav h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+/* LANDING CSS */
+
+.landing {
+  background-image: url("../img/blue.jpg");
+  background-size: contain;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  width: 100%;
+  height: 50px;
+  color: #0c4160;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.top {
+  width: 75%;
+  padding-left: 30px;
+}
+.all-filter {
+  padding: 10px;
+  border: 1px solid #0c4160;
+  border-radius: 5px;
+  margin-top: 0;
+  background-color: #0c4160;
+  color: #fff;
+}
+.filter {
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.filter a {
+  padding: 5px;
+  width: 130px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #0c4160;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #0c4160;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.filter a:hover {
+  padding: 5px;
+  width: 130px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #0c4160;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #2f6381;
+  color: #fff;
+  transform: scale(1.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.status {
+  width: 30%;
+}
+
+.status-item {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 20px;
+
+  position: relative;
+  padding-bottom: 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05);
+  margin-bottom: 2rem;
+}
+.status-item:hover {
+  transform: scale(1.05);
+}
+
+.status-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.status-item.pending::after {
+  content: "Pending";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: yellow;
+  color: #0c4160;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status-item.approved::after {
+  content: "Approved";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status-item.denied::after {
+  content: "Denied";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status-text {
+  position: absolute;
+  bottom: -5px;
+  left: 70px;
+  width: 250px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid gray;
+  width: 80%;
+}
+
+.pending-text {
+  color: #0c4160;
+}
+
+.approved-text {
+  color: green;
+}
+
+.denied-text {
+  color: red;
+}
